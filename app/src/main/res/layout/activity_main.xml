@@ -6,7 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#00d0f9"
     android:padding="10dp"
-    android:weightSum="7">
+    android:weightSum="8">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
