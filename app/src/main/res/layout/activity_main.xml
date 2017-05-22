@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#00d0f9"
+    android:padding="10dp"
+    android:weightSum="7">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:orientation="vertical"
+              android:layout_weight="6">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <ImageView
+                      android:id="@+id/imageView"
+                      android:layout_width="74dp"
+                      android:layout_height="match_parent"
+                      android:src="@mipmap/ic_launcher"
+                      />
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginLeft="10dp">
+                      <EditText
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="Nombre"
+                          android:inputType="textCapWords"/>
+                      <EditText
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="Apellido "
+                          android:inputType="textCapWords"/>
+
+                  </LinearLayout>
+
+
+              </LinearLayout>
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Correo Electronico"
+                  android:layout_marginTop="10dp"
+                  android:inputType="textEmailAddress"/>
+
+              <EditText
+                  android:id="@+id/editText2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Usuario"
+                  android:layout_marginTop="10dp"/>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="2"
+                  android:layout_marginTop="10dp">
+
+                  <EditText
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:hint="Contraseña"
+                      android:layout_weight="1"
+                      android:inputType="textPassword"/>
+
+                  <EditText
+                      android:id="@+id/editText"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:hint="Contraseña"
+                      android:layout_weight="1"
+                      android:inputType="textPassword"/>
+              </LinearLayout>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Anotese Observaciones"
+                  android:textColor="#fb000000"
+                  android:textSize="18dp"
+                  android:background="#a8fda0"
+                  android:paddingLeft="15dp"
+                  android:layout_marginTop="10dp"/>
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Observaciones"
+                  android:paddingLeft="15dp"
+                  android:background="#919191"
+                  android:layout_marginTop="10dp"
+                  android:inputType="number"/>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_marginTop="10dp"
+              android:orientation="horizontal"
+              android:weightSum="2"
+              android:layout_weight="1"
+              android:gravity="bottom">
+
+              <Button
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Cancelar" />
+
+              <Button
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Aceptar" />
+
+          </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+</LinearLayout>
